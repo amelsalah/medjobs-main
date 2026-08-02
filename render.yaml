@@ -1,0 +1,29 @@
+# Render Blueprint for the medjobs Fastify app.
+# Deploy with the "Deploy to Render" button in README.md, or via
+# Render Dashboard -> New -> Blueprint, pointing at this repo.
+#
+# Uses the free web service plan. Free instances have an ephemeral
+# filesystem (no persistent disk) and spin down after 15 min of
+# inactivity, so the SQLite DB resets on each redeploy/restart.
+# That's fine here since SYNC_ON_START re-populates jobs on boot.
+# For persistent data, switch DATABASE_URL to a Postgres instance
+# (see .env.example) and add a "databases:" block below.
+
+services:
+  - type: web
+    name: medjobs
+    runtime: node
+    plan: free
+    autoDeploy: false
+    buildCommand: npm install && npx prisma generate && npx prisma db push --accept-data-loss
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        value: file:./prisma/dev.db
+      - key: SYNC_SCHEDULER
+        value: "true"
+      - key: SYNC_ON_START
+        value: "true"
+      - key: SYNC_CRON
+        value: "0 * * * *"

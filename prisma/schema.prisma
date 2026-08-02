@@ -1,0 +1,26 @@
+// Default: SQLite (no Docker, no local Postgres install).
+// For PostgreSQL: set DATABASE_URL to postgresql://... and change provider to "postgresql" (see .env.example).
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Job {
+  id           Int       @id @default(autoincrement())
+  title        String
+  location     String
+  hospitalName String    @map("hospital_name")
+  postedDate   DateTime? @map("posted_date")
+  jobUrl       String?   @map("job_url")
+  externalId   String?   @unique @map("external_id")
+  sourceKey    String?   @map("source_key")
+  lastSyncedAt DateTime? @map("last_synced_at")
+
+  @@index([sourceKey])
+  @@map("jobs")
+}

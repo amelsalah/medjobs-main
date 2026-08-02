@@ -1,0 +1,426 @@
+[
+  {
+    "Hospital / Group": "NMC Healthcare",
+    "Emirate(s)": "Across UAE",
+    "Platform (if known)": null,
+    "Careers URL": "https://eiby.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
+    "Notes": "Oracle Applications Cloud careers portal (CandidateExperience).",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "American Hospital Dubai",
+    "Emirate(s)": "Dubai",
+    "Platform (if known)": null,
+    "Careers URL": "https://fa-epvs-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
+    "Notes": "Oracle Cloud HCM careers site (CandidateExperience).",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "SEHA \u2013 Abu Dhabi Health Services Company",
+    "Emirate(s)": "Abu Dhabi (network)",
+    "Platform (if known)": null,
+    "Careers URL": "https://fa-eutv-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
+    "Notes": "Oracle Cloud HCM careers portal for SEHA network.",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Sheikh Shakhbout Medical City (SSMC)",
+    "Emirate(s)": "Abu Dhabi",
+    "Platform (if known)": null,
+    "Careers URL": "https://fa-eutv-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/jobs",
+    "Notes": "Oracle Cloud HCM careers portal specific to SSMC.",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Cleveland Clinic Abu Dhabi",
+    "Emirate(s)": "Abu Dhabi",
+    "Platform (if known)": null,
+    "Careers URL": "https://fa-ewmp-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/",
+    "Notes": "Oracle Cloud HCM careers site (CandidateExperience).",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "King\u2019s College Hospital London \u2013 Dubai",
+    "Emirate(s)": "Dubai",
+    "Platform (if known)": null,
+    "Careers URL": "https://effb.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/KingsCareerPortal/jobs",
+    "Notes": "Oracle Cloud HCM careers site (KingsCareerPortal).",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Aster DM Healthcare / Medcare (UAE)",
+    "Emirate(s)": "Across UAE",
+    "Platform (if known)": null,
+    "Careers URL": "https://hcdtgccprod-iayeqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/jobs",
+    "Notes": "Oracle Cloud HCM GCC portal; includes UAE roles (Aster Hospitals/Medcare).",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Saudi German Health (UAE)",
+    "Emirate(s)": "Dubai, Sharjah, Ajman",
+    "Platform (if known)": "Oracle Taleo (legacy)",
+    "Careers URL": "https://aa303.taleo.net/careersection/sgh_external/jobsearch.ftl",
+    "Notes": "SGH career site links to Oracle Taleo (aa303.taleo.net).",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Sheikh Khalifa Medical City \u2013 Ajman (SKMCA)",
+    "Emirate(s)": "Ajman",
+    "Platform (if known)": "Oracle Cloud HCM (CandidateExperience)",
+    "Careers URL": "https://fa-exqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1003/jobs",
+    "Notes": "SKMCA Ajman Oracle Cloud HCM portal (CX_1003).",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Sheikh Khalifa Medical City (SKMC) \u2014 Abu Dhabi",
+    "Emirate(s)": "Abu Dhabi",
+    "Platform (if known)": "Oracle Cloud HCM (CandidateExperience)",
+    "Careers URL": "https://fa-eutv-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
+    "Notes": "SEHA network hospital; openings appear under SEHA Oracle portal.",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Corniche Hospital \u2014 Abu Dhabi",
+    "Emirate(s)": "Abu Dhabi",
+    "Platform (if known)": "Oracle Cloud HCM (CandidateExperience)",
+    "Careers URL": "https://fa-eutv-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
+    "Notes": "SEHA network hospital; openings appear under SEHA Oracle portal.",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Tawam Hospital \u2014 Al Ain",
+    "Emirate(s)": "Al Ain (Abu Dhabi)",
+    "Platform (if known)": "Oracle Cloud HCM (CandidateExperience)",
+    "Careers URL": "https://fa-eutv-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
+    "Notes": "SEHA network hospital; openings appear under SEHA Oracle portal.",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Al Ain Hospital \u2014 Al Ain",
+    "Emirate(s)": "Al Ain (Abu Dhabi)",
+    "Platform (if known)": "Oracle Cloud HCM (CandidateExperience)",
+    "Careers URL": "https://fa-eutv-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
+    "Notes": "SEHA network hospital; openings appear under SEHA Oracle portal.",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Al Rahba Hospital \u2014 Abu Dhabi",
+    "Emirate(s)": "Abu Dhabi",
+    "Platform (if known)": "Oracle Cloud HCM (CandidateExperience)",
+    "Careers URL": "https://fa-eutv-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
+    "Notes": "SEHA network hospital; openings appear under SEHA Oracle portal.",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Medcare Women & Children Hospital \u2014 Dubai",
+    "Emirate(s)": "Dubai",
+    "Platform (if known)": "Oracle Cloud HCM (CandidateExperience)",
+    "Careers URL": "https://hcdtgccprod-iayeqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/jobs",
+    "Notes": "Part of Aster DM / Medcare; roles listed under GCC Oracle portal.",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Aster Hospital Al Qusais \u2014 Dubai",
+    "Emirate(s)": "Dubai",
+    "Platform (if known)": "Oracle Cloud HCM (CandidateExperience)",
+    "Careers URL": "https://hcdtgccprod-iayeqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/jobs",
+    "Notes": "Part of Aster DM; roles listed under GCC Oracle portal.",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "SEHA \u2013 Abu Dhabi Health Services Company (network)",
+    "Emirate(s)": "Abu Dhabi",
+    "Platform (if known)": "Oracle Cloud HCM",
+    "Careers URL": "https://ehtm.fa.kas.oraclecloud.com/hcmUI/CandidateExperience/en/sites/HealthCareers",
+    "Notes": "Covers SKMC, Tawam, Al Ain Hospital, Al Dhafra, Corniche, etc.",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Dubai Health (Dubai Government hospitals)",
+    "Emirate(s)": "Dubai",
+    "Platform (if known)": "Dubai Careers (Gov portal)",
+    "Careers URL": "https://dubaihealth.ae/en/careers",
+    "Notes": "Covers Rashid, Dubai Hospital, Latifa, Hatta, etc.",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Emirates Health Services \u2013 EHS (Federal/Northern Emirates)",
+    "Emirate(s)": "Sharjah, Ajman, UAQ, RAK, Fujairah",
+    "Platform (if known)": "EHS Recruitment System",
+    "Careers URL": "https://www.ehs.gov.ae/en/careers",
+    "Notes": "Covers Al Qassimi, Fujairah, Khorfakkan, etc.",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "M42 (network careers)",
+    "Emirate(s)": "Abu Dhabi, Dubai",
+    "Platform (if known)": "Group Careers Portal",
+    "Careers URL": "https://www.m42.ae/careers",
+    "Notes": "Cleveland Clinic Abu Dhabi, Danat Al Emarat, Healthpoint, ICLDC, Moorfields AUH, NRL",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Cleveland Clinic Abu Dhabi (CCAD)",
+    "Emirate(s)": "Abu Dhabi",
+    "Platform (if known)": "Oracle Cloud HCM",
+    "Careers URL": "https://www.clevelandclinicabudhabi.ae/en/careers",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Danat Al Emarat Hospital",
+    "Emirate(s)": "Abu Dhabi",
+    "Platform (if known)": "M42 / Group Portal",
+    "Careers URL": "https://careers-m42.icims.com/jobs/intro",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Healthpoint Abu Dhabi",
+    "Emirate(s)": "Abu Dhabi",
+    "Platform (if known)": "M42 / Group Portal",
+    "Careers URL": "https://healthpoint.ae/careers/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Imperial College London Diabetes Centre (ICLDC)",
+    "Emirate(s)": "Abu Dhabi",
+    "Platform (if known)": "M42 / Group Portal",
+    "Careers URL": "https://icldec.ae/careers/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Moorfields Eye Hospital UAE",
+    "Emirate(s)": "Dubai, Abu Dhabi",
+    "Platform (if known)": "M42 / Group Portal",
+    "Careers URL": "https://moorfields.ae/careers/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Mediclinic Middle East",
+    "Emirate(s)": "Dubai, Abu Dhabi, Al Ain",
+    "Platform (if known)": "SAP SuccessFactors",
+    "Careers URL": "https://careers.mediclinic.ae/",
+    "Notes": "City Hospital, Parkview, Welcare, etc.",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Aster DM Healthcare",
+    "Emirate(s)": "Dubai, Abu Dhabi, Sharjah",
+    "Platform (if known)": "Oracle Cloud HCM",
+    "Careers URL": "https://careers.asterdmhealthcare.com/",
+    "Notes": "Includes Aster Hospitals; Medcare listed separately.",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Medcare Hospitals",
+    "Emirate(s)": "Dubai",
+    "Platform (if known)": "Oracle Cloud HCM",
+    "Careers URL": "https://www.medcare.ae/careers/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Burjeel Holdings (group)",
+    "Emirate(s)": "Abu Dhabi, Dubai, Al Ain, Abu Dhabi Region",
+    "Platform (if known)": "Group Careers Portal",
+    "Careers URL": "https://burjeelholdings.com/careers/",
+    "Notes": "Burjeel, LLH, Lifecare, Medeor.",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Burjeel Hospital (flagship)",
+    "Emirate(s)": "Abu Dhabi, Dubai",
+    "Platform (if known)": "Group Portal / Unknown",
+    "Careers URL": "https://burjeel.com/careers/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "LLH Hospital",
+    "Emirate(s)": "Abu Dhabi",
+    "Platform (if known)": "Group Portal / Unknown",
+    "Careers URL": "https://llhhospital.com/careers/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Lifecare Hospital",
+    "Emirate(s)": "Abu Dhabi",
+    "Platform (if known)": "Group Portal / Unknown",
+    "Careers URL": "https://lifecarehospital.ae/careers/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Medeor Hospital",
+    "Emirate(s)": "Abu Dhabi, Dubai",
+    "Platform (if known)": "Group Portal / Unknown",
+    "Careers URL": "https://medeor.ae/careers/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Zulekha Hospitals (Dubai / Sharjah)",
+    "Emirate(s)": "Dubai, Sharjah",
+    "Platform (if known)": "Custom / Other",
+    "Careers URL": "https://www.zulekhahospitals.com/mobile/dubai/contact-us",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Prime Healthcare Group",
+    "Emirate(s)": "Dubai",
+    "Platform (if known)": "Custom / Other",
+    "Careers URL": "https://primecareers.ae/",
+    "Notes": "Prime Hospital & Prime Medical Centers.",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Emirates Hospitals Group",
+    "Emirate(s)": "Dubai, Abu Dhabi",
+    "Platform (if known)": "Custom / Other",
+    "Careers URL": "https://emirateshospitals.ae/careers/",
+    "Notes": "Emirates Hospital, Emirates Specialty, etc.",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Fakeeh University Hospital",
+    "Emirate(s)": "Dubai",
+    "Platform (if known)": "Unknown",
+    "Careers URL": "https://careers.fuh.care/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Thumbay Healthcare (Thumbay University Hospital, GMC)",
+    "Emirate(s)": "Ajman",
+    "Platform (if known)": "Unknown",
+    "Careers URL": "https://thumbay.com/careers/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Canadian Specialist Hospital (Dubai)",
+    "Emirate(s)": "Dubai",
+    "Platform (if known)": "Unknown",
+    "Careers URL": "https://csh.ae/careers/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Dubai London Hospital",
+    "Emirate(s)": "Dubai",
+    "Platform (if known)": "Unknown",
+    "Careers URL": "https://dubailondonhospital.com/careers/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Gargash Hospital (Dubai)",
+    "Emirate(s)": "Dubai",
+    "Platform (if known)": "Unknown",
+    "Careers URL": "https://gargashhospital.com/careers/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "RAK Hospital (Ras Al Khaimah)",
+    "Emirate(s)": "RAK",
+    "Platform (if known)": "Custom / Other",
+    "Careers URL": "https://rakhospital.com/careers/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Clemenceau Medical Center Hospital Dubai (CMC)",
+    "Emirate(s)": "Dubai",
+    "Platform (if known)": "Unknown",
+    "Careers URL": "https://cmcdubai.ae/careers/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "International Modern Hospital (Dubai)",
+    "Emirate(s)": "Dubai",
+    "Platform (if known)": "Unknown",
+    "Careers URL": "https://www.imh.ae/careers/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Adam Vital Hospital (Dubai)",
+    "Emirate(s)": "Dubai",
+    "Platform (if known)": "Unknown",
+    "Careers URL": "https://adamvitalhospital.com/careers/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Belhoul Speciality Hospital (Dubai)",
+    "Emirate(s)": "Dubai",
+    "Platform (if known)": "Unknown",
+    "Careers URL": "https://www.belhoulspecialty.com/careers",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Neuro Spinal Hospital Dubai (NSH)",
+    "Emirate(s)": "Dubai",
+    "Platform (if known)": "Unknown",
+    "Careers URL": "https://nshdubai.com/careers/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Emirates International Hospital (Al Ain)",
+    "Emirate(s)": "Al Ain",
+    "Platform (if known)": "Unknown",
+    "Careers URL": "https://www.eih.ae/careers",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Kanad Hospital (Al Ain)",
+    "Emirate(s)": "Al Ain",
+    "Platform (if known)": "WebHR",
+    "Careers URL": "https://kanad.webhr.co/hr/careers/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "University Hospital Sharjah (UHS)",
+    "Emirate(s)": "Sharjah",
+    "Platform (if known)": "SAP SuccessFactors",
+    "Careers URL": "https://uhs.ae/careers/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "SKMCA \u2013 Sheikh Khalifa Medical City Ajman",
+    "Emirate(s)": "Ajman",
+    "Platform (if known)": "Oracle Cloud HCM",
+    "Careers URL": "https://fa-exqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1003",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Canadian Medical Center (CMC Dubai)",
+    "Emirate(s)": "Dubai",
+    "Platform (if known)": "Unknown",
+    "Careers URL": "https://www.canadiancmc.com/careers/",
+    "Notes": "Clinics; included per earlier mention.",
+    "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Ahalia Hospital (Abu Dhabi / Mussafah)",
+    "Emirate(s)": "Abu Dhabi",
+    "Platform (if known)": "Unknown",
+    "Careers URL": "https://ahliagroup.com/hospital/career/",
+    "Notes": null,
+    "Verified on": "2025-09-23"
+  }
+]
