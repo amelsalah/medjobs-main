@@ -222,9 +222,24 @@
     const location = card.dataset.location || "";
     const date = card.dataset.date || "";
     const url = card.dataset.url || "";
+    const logoDomain = card.dataset.logo || "";
     const desc = card.dataset.desc || "";
 
-    if (modalAvatar) modalAvatar.textContent = (org.trim().charAt(0) || "?").toUpperCase();
+    if (modalAvatar) {
+      modalAvatar.innerHTML = `<span class="avatar__initial">${escapeHtml(
+        (org.trim().charAt(0) || "?").toUpperCase(),
+      )}</span>`;
+      if (logoDomain) {
+        const img = document.createElement("img");
+        img.className = "avatar__img";
+        img.alt = "";
+        img.loading = "lazy";
+        img.src = `https://www.google.com/s2/favicons?domain=${encodeURIComponent(logoDomain)}&sz=128`;
+        img.onload = () => img.classList.add("avatar__img--loaded");
+        img.onerror = () => img.remove();
+        modalAvatar.appendChild(img);
+      }
+    }
     if (modalTitle) modalTitle.textContent = title;
     if (modalOrg) modalOrg.textContent = org;
     setMetaRow(modalLocation, location);

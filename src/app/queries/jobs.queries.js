@@ -3,6 +3,7 @@
 
 import { prisma } from "../db/prisma.js";
 import { PAGE_SIZE, buildJobOrderBy, buildJobWhere } from "../schemas/jobs.schema.js";
+import { resolveLogoDomain } from "../schemas/logo.schema.js";
 
 /**
  * @param {import('@prisma/client').Prisma.JobWhereInput} where
@@ -32,16 +33,34 @@ export async function groupJobsByLocation() {
 }
 
 /**
+ * One representative job_url per employer, used to derive a logo domain.
+ * @returns {Promise<Map<string, string | null>>}
+ */
+export async function fetchHospitalLogoDomains() {
+  const rows = await prisma.job.findMany({
+    where: { jobUrl: { not: null } },
+    distinct: ["hospitalName"],
+    select: { hospitalName: true, jobUrl: true },
+  });
+  const map = new Map();
+  for (const row of rows) {
+    map.set(row.hospitalName, resolveLogoDomain(row.hospitalName, row.jobUrl));
+  }
+  return map;
+}
+
+/**
  * @param {JobListQuery} filters
  * @returns {Promise<JobListBundle>}
  */
 export async function fetchJobListBundle(filters) {
   const where = buildJobWhere(filters);
-  const [totalFiltered, totalJobs, hospitalAgg, cityAgg] = await Promise.all([
+  const [totalFiltered, totalJobs, hospitalAgg, cityAgg, logoDomains] = await Promise.all([
     countJobs(where),
     countAllJobs(),
     groupJobsByHospital(),
     groupJobsByLocation(),
+    fetchHospitalLogoDomains(),
   ]);
 
   const totalPages = Math.max(1, Math.ceil(totalFiltered / PAGE_SIZE));
@@ -62,6 +81,7 @@ export async function fetchJobListBundle(filters) {
     hospital_counts: hospitalAgg.map((h) => ({
       hospital_name: h.hospitalName,
       total: h._count.id,
+      logo_domain: logoDomains.get(h.hospitalName) ?? null,
     })),
     city_counts: cityAgg.map((c) => ({
       location: c.location,

@@ -1,6 +1,7 @@
 /** @typedef {import('../types/jobs.types.js').JobListQuery} JobListQuery */
 
 import { listQuery } from "./list-query.schema.js";
+import { resolveLogoDomain } from "./logo.schema.js";
 
 export const PAGE_SIZE = 10;
 
@@ -84,6 +85,7 @@ export function toJobRowView(job) {
     location: job.location,
     posted_date: job.postedDate ? job.postedDate.toISOString().slice(0, 10) : "",
     job_url: job.jobUrl ?? "",
+    logo_domain: resolveLogoDomain(job.hospitalName, job.jobUrl),
     description: null,
     salary: null,
   };
@@ -105,6 +107,15 @@ export function buildJobListViewContext(filters, data, location_pills, active_fi
 
   const base = { q, hospital, city, sort_by, sort_order };
   const hrefFor = (num) => listQuery({ ...base, page: num });
+
+  const top_employers = [...data.hospital_counts]
+    .sort((a, b) => b.total - a.total)
+    .slice(0, 12)
+    .map((h) => ({
+      ...h,
+      href: listQuery({ hospital: h.hospital_name }),
+      active: hospital === h.hospital_name,
+    }));
 
   const pagination =
     totalPages > 1
@@ -129,6 +140,7 @@ export function buildJobListViewContext(filters, data, location_pills, active_fi
     total_filtered: totalFiltered,
     hospital_counts,
     city_counts,
+    top_employers,
     jobRows,
     pagination,
     clearFiltersHref: listQuery({

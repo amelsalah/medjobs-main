@@ -154,10 +154,10 @@
   {
     "Hospital / Group": "M42 (network careers)",
     "Emirate(s)": "Abu Dhabi, Dubai",
-    "Platform (if known)": "Group Careers Portal",
-    "Careers URL": "https://www.m42.ae/careers",
+    "Platform (if known)": "iCIMS (Jibe)",
+    "Careers URL": "https://careers.m42.ae/jobs",
     "Notes": "Cleveland Clinic Abu Dhabi, Danat Al Emarat, Healthpoint, ICLDC, Moorfields AUH, NRL",
-    "Verified on": "2025-09-23"
+    "Verified on": "2026-08-02"
   },
   {
     "Hospital / Group": "Cleveland Clinic Abu Dhabi (CCAD)",
@@ -422,5 +422,13 @@
     "Careers URL": "https://ahliagroup.com/hospital/career/",
     "Notes": null,
     "Verified on": "2025-09-23"
+  },
+  {
+    "Hospital / Group": "Al Zahra Hospital Dubai",
+    "Emirate(s)": "Dubai, Sharjah, Abu Dhabi",
+    "Platform (if known)": "MENA iTech (OSS)",
+    "Careers URL": "https://azhd.ae/careers/",
+    "Notes": "187-bed JCI-accredited private hospital group; careers page links out to a MENA iTech online application portal.",
+    "Verified on": "2026-08-02"
   }
 ]
