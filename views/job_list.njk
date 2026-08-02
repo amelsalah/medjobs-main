@@ -25,6 +25,11 @@
       <p class="intro__lead">
         Search and filter vacancies aggregated from employer career portals. Apply on the official site for each listing.
       </p>
+      <div class="intro__stats">
+        <span class="stat-chip"><strong>{{ total_jobs }}</strong> open roles</span>
+        <span class="stat-chip"><strong>{{ hospital_counts | length }}</strong> employers</span>
+        <span class="stat-chip"><strong>{{ city_counts | length }}</strong> locations</span>
+      </div>
     </section>
 
     <form method="get" id="jobFilterForm" class="toolbar" action="/">
@@ -156,16 +161,39 @@
     <ul class="job-list">
       {% if jobRows | length %}
         {% for job in jobRows %}
-          <li class="job-card">
+          <li class="job-card"
+              tabindex="0"
+              role="button"
+              aria-haspopup="dialog"
+              data-title="{{ job.title }}"
+              data-org="{{ job.hospital_name }}"
+              data-location="{{ job.location }}"
+              data-date="{{ job.posted_date }}"
+              data-url="{{ job.job_url }}"
+              data-desc="{{ job.description | default('') }}">
             <div class="job-card__top">
-              <div>
+              <span class="job-card__avatar" aria-hidden="true">{{ (job.hospital_name | default('') | first | default('?')) | upper }}</span>
+              <div class="job-card__heading">
                 <h3 class="job-card__title">{{ job.title }}</h3>
                 <p class="job-card__org">{{ job.hospital_name }}</p>
               </div>
+              <svg class="job-card__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M9 18l6-6-6-6" />
+              </svg>
             </div>
             <div class="job-card__meta">
-              {% if job.location %}<span>{{ job.location }}</span>{% endif %}
-              {% if job.posted_date %}<span>Posted {{ job.posted_date }}</span>{% endif %}
+              {% if job.location %}
+                <span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z" /><circle cx="12" cy="10" r="2.5" /></svg>
+                  {{ job.location }}
+                </span>
+              {% endif %}
+              {% if job.posted_date %}
+                <span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M3 9h18M8 2v4M16 2v4" /></svg>
+                  Posted {{ job.posted_date }}
+                </span>
+              {% endif %}
             </div>
             <p class="job-card__desc">
               {% if job.description %}
@@ -190,6 +218,7 @@
         {% endfor %}
       {% else %}
         <li class="empty-state">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="M21 21l-4.35-4.35" /></svg>
           <p>No jobs match your search or filters. Try broadening your criteria or clearing filters.</p>
         </li>
       {% endif %}
@@ -220,6 +249,43 @@
       <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
   </footer>
+
+  <div class="modal-overlay" id="jobModalOverlay" hidden>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalJobTitle">
+      <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Close job details">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12" /></svg>
+      </button>
+      <div class="modal-header">
+        <span class="modal-avatar" id="modalJobAvatar" aria-hidden="true"></span>
+        <div>
+          <h3 class="modal-job-title" id="modalJobTitle"></h3>
+          <p class="modal-job-org" id="modalJobOrg"></p>
+        </div>
+      </div>
+      <div class="modal-meta">
+        <span id="modalJobLocation" hidden>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z" /><circle cx="12" cy="10" r="2.5" /></svg>
+          <span class="modal-meta__text"></span>
+        </span>
+        <span id="modalJobDate" hidden>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M3 9h18M8 2v4M16 2v4" /></svg>
+          <span class="modal-meta__text"></span>
+        </span>
+      </div>
+      <div class="modal-body">
+        <h4>Job description</h4>
+        <p id="modalJobDesc"></p>
+      </div>
+      <div class="modal-footer">
+        <a id="modalApplyLink" class="btn-apply" target="_blank" rel="noopener noreferrer">
+          Apply on employer site
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
 
   <script src="/static/js/app.js" defer></script>
 </body>
